@@ -1,0 +1,341 @@
+/* 
+Primary Color:#BF9B8E
+*/
+
+.bg-demo {
+    background-image: url("https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png");
+  
+    /* 
+    When using an relative path
+    background-image:url("../img/kitten.jpg"); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 15em;
+  }
+  
+  /*  ---------------Box Sizing-----------------  */
+  
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /*  --------------- Utility Classes -----------------  */
+  
+  .container {
+    width: 80vw;
+    max-width: 960px;
+    margin: 40px auto;
+  }
+  
+  .img-right {
+    float: right;
+    border: 1px solid #c0c0c0;
+    padding: 2px;
+    margin: 10px 0 10px 20px;
+  }
+  
+  .img-left {
+    float: left;
+    border: 1px solid #c0c0c0;
+    padding: 2px;
+    margin: 10px 20px 10px 0;
+  }
+  
+  .img-center {
+    display: block;
+    border: 1px solid #c0c0c0;
+    padding: 2px;
+    margin: 20px auto;
+  }
+  
+  /*  --------------- Responsive Images -----------------  */
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /*  --------------- Tables ------------------------  */
+  
+  table {
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-collapse: collapse;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    margin: 20px 0;
+  }
+  table caption {
+    font-weight: bold;
+    margin: 10px;
+  }
+  table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  table tr:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  table th {
+    background-color: #172635;
+    color: #fff;
+    padding: 10px;
+  }
+  table td {
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+    text-align: right;
+    width: 33%;
+  }
+  
+  td:nth-child(1) {
+    text-align: left;
+  }
+  
+  /*  --------------- Lists ------------------------  */
+  
+  ol {
+    list-style-type: lower-roman;
+  }
+  
+  li {
+  }
+  
+  ul li > ul {
+    list-style-type: square;
+    color: red;
+  }
+  
+  dl {
+  }
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    margin: 0;
+  }
+  
+  dd + dt {
+    margin-top: 20px;
+    color: red;
+  }
+  
+  /*  --------------- Global Styles -----------------  */
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+  }
+  
+  header.primary {
+    text-align: center;
+    color: #ffffff;
+    padding: 40px;
+    /*long form*/
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    /* T,R,B,L */
+    padding: 20px 40px 20px 40px;
+    /* Two Value Top/Bottom / L/R */
+    padding: 20px 40px;
+    text-shadow: 1px 1px #000000;
+    background-color: #460026;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='temple' fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M152 150v2H0v-2h28v-8H8v-20H0v-2h8V80h42v20h20v42H30v8h90v-8H80v-42h20V80h42v40h8V30h-8v40h-42V50H80V8h40V0h2v8h20v20h8V0h2v150zm-2 0v-28h-8v20h-20v8h28zM82 30v18h18V30H82zm20 18h20v20h18V30h-20V10H82v18h20v20zm0 2v18h18V50h-18zm20-22h18V10h-18v18zm-54 92v-18H50v18h18zm-20-18H28V82H10v38h20v20h38v-18H48v-20zm0-2V82H30v18h18zm-20 22H10v18h18v-18zm54 0v18h38v-20h20V82h-18v20h-20v20H82zm18-20H82v18h18v-18zm2-2h18V82h-18v18zm20 40v-18h18v18h-18zM30 0h-2v8H8v20H0v2h8v40h42V50h20V8H30V0zm20 48h18V30H50v18zm18-20H48v20H28v20H10V30h20V10h38v18zM30 50h18v18H30V50zm-2-40H10v18h18V10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  header.primary h1 {
+    font-size: 2.4rem;
+    margin: 20px 0 10px;
+  }
+  
+  header.primary h1 a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header.primary h2 {
+    font-size: 1.4rem;
+  }
+  
+  header.primary nav {
+    max-width: 960px;
+    margin: 20px auto;
+  }
+  
+  header.primary nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  header.primary nav ul li {
+    list-style-type: none;
+  }
+  
+  header.primary nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+  }
+  
+  header.primary nav ul li a:hover,
+  header.primary nav ul li a:active {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  #intro {
+    border-bottom: 1px dotted #c0c0c0;
+    padding-bottom: 14px;
+  }
+  
+  #intro h2 {
+    color: #0090b4;
+    border-bottom: 1px dotted #c0c0c0;
+  }
+  
+  #content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    border-bottom: 1px dotted #c0c0c0;
+    padding-bottom: 2.6rem;
+  }
+  
+  #content article.post {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    transition: 0.5s;
+  }
+  
+  #content article.post:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  article.post figure {
+    margin: 0;
+  }
+  
+  time.post-date,
+  figcaption,
+  .post-meta {
+    text-transform: uppercase;
+    color: #c0c0c0;
+  }
+  .post figure img {
+    border: 1px solid #c0c0c0;
+    padding: 2px;
+    border-radius: 5px;
+  }
+  
+  article.post a {
+    color: 0090b4;
+  }
+  
+  article.post a:hover {
+    text-decoration: none;
+  }
+  
+  #practice h2 {
+    color: 0090b4;
+    border-bottom: 1px dotted #c0c0c0;
+  }
+  
+  #practice blockquote {
+    border: 4px double #c0c0c0;
+    margin: 40px 80px;
+    padding: 20px 40px;
+    border-radius: 30px 0;
+    background-color: 0090b4;
+    color: #c0c0c0;
+    line-height: 1.8;
+    text-shadow: 1px 1px #000;
+  }
+  
+  #practice blockquote cite {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  aside[role="complementary"] {
+    background-color: #00dacf;
+    color: #ffffff;
+    padding: 1.9rem;
+  }
+  
+  /* Attribute Selector Example
+  a[target="_blank"]{
+    color:red;
+  }
+  
+  */
+  
+  aside .container {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+  }
+  
+  aside .widget a:last-of-type {
+    display: block;
+    text-align: right;
+    padding-top: 20px;
+    color: white;
+  }
+  
+  aside .widget footer {
+    display: none;
+  }
+  
+  #colophon {
+    background-color: #493600;
+  }
+  
+  #colophon h6 {
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+  
+  /*  --------------- Media Queries -----------------  */
+  
+  @media screen and (max-width: 600px) {
+    header.primary nav ul {
+      flex-direction: column;
+      max-width: 250px;
+      margin: auto;
+    }
+    header.primary nav a {
+      display: block;
+    }
+    header.primary nav li {
+      margin-bottom: 10px;
+    }
+  }
+  
+  #content article.post:hover,
+  #content article.post:active {
+    transition: 0.5s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    font-size: medium;
+  }
+  
